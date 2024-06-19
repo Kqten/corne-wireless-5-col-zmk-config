@@ -11,13 +11,6 @@
 
 &mt { flavor = "tap-preferred"; };
 
-flavor = "
-
-hold-preferred {
-    ";
-};
-
-/
 
 combos {
     compatible = "zmk,combos";
