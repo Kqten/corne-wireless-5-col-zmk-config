@@ -10,118 +10,25 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mt {
-    tapping-term-ms = <400>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
-&lt { tapping-term-ms = <400>; };
+flavor = "
 
-/ {
+hold-preferred {
+    ";};
+
+/
+
     combos {
         compatible = "zmk,combos";
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <1 2 3>;
+            key-positions = <1 2>;
             bindings = <&kp ESCAPE>;
-        };
-
-        combo_bksp {
-            timeout-ms = <50>;
-            key-positions = <10 9 8>;
-            bindings = <&kp BACKSPACE>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 14 15>;
-        };
-
-        combo_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <25 26 27>;
-        };
-
-        combo_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <21 22 20>;
-        };
-
-        combo_rshift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <33 34 32>;
-        };
-
-        exclm {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 13>;
-        };
-
-        at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <2 14>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <3 15>;
-        };
-
-        dllr {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        percnt {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <6 18>;
-        };
-
-        and {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <7 19>;
-        };
-
-        str {
-            bindings = <&kp ASTERISK>;
-            key-positions = <8 20>;
-        };
-
-        leftparen {
-            bindings = <&kp LPAR>;
-            key-positions = <9 21>;
-        };
-
-        rparen {
-            bindings = <&kp RPAR>;
-            key-positions = <10 22>;
-        };
-
-        layout_switch {
-            bindings = <&tog 0>;
-            key-positions = <36 37 40 41>;
-        };
-
-        system_reset {
-            bindings = <&sys_reset>;
-            key-positions = <3 4 5 14>;
-        };
-
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <15 16 17 26>;
-        };
-
-        system_layer_combo {
-            bindings = <&mo 3>;
-            key-positions = <36 37 38>;
         };
     };
 
@@ -144,7 +51,7 @@
 &trans  &kp DOLLAR   &kp EXCLAMATION  &kp QUESTION       &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp EQUAL             &kp N7        &kp N8        &kp N9        &kp SLASH    &trans
 &trans  &kp AT_SIGN  &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &trans
 &trans  &kp HASH     &kp PIPE         &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT  &trans
-                                      &trans             &trans                &trans                   &trans                &mo 4         &trans
+                                      &trans             &trans                &trans                   &trans                &mo 4         &kp NUMBER_0
             >;
         };
 
