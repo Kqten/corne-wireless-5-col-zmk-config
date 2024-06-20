@@ -21,14 +21,9 @@
             bindings = <&kp ESCAPE>;
         };
 
-        tq_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 16>;
-        };
-
-        colon_nbsp {
+        combo_semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <19 10>;
+            key-positions = <10 9>;
         };
     };
 
