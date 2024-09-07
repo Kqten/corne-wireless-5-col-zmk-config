@@ -44,10 +44,10 @@
 
         colemak_layer {
             bindings = <
-&none  &mt ESCAPE Q  &kp W           &kp F           &kp P  &kp G                 &kp J      &kp L  &kp U          &kp Y    &kp BACKSPACE  &none
-&none  &kp A         &kp R           &kp S           &kp T  &kp D                 &kp H      &kp N  &kp E          &kp I    &kp O          &none
-&none  &mt LCTRL Z   &mt LEFT_ALT X  &kp C           &kp V  &kp B                 &kp K      &kp M  &kp COMMA      &kp DOT  &kp ENTER      &none
-                                     &kp LEFT_SHIFT  &mo 1  &mt LCTRL LEFT_GUI    &kp SPACE  &mo 2  &kp SEMICOLON
+&none  &kp Q        &kp W           &kp F           &kp P  &kp G                 &kp J      &kp L  &kp U          &kp Y    &kp BACKSPACE  &none
+&none  &kp A        &kp R           &kp S           &kp T  &kp D                 &kp H      &kp N  &kp E          &kp I    &kp O          &none
+&none  &mt LCTRL Z  &mt LEFT_ALT X  &kp C           &kp V  &kp B                 &kp K      &kp M  &kp COMMA      &kp DOT  &kp ENTER      &none
+                                    &kp LEFT_SHIFT  &mo 1  &mt LCTRL LEFT_GUI    &kp SPACE  &mo 2  &kp SEMICOLON
             >;
         };
 
@@ -71,10 +71,10 @@
 
         sys_layer {
             bindings = <
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT    &trans          &kp LANG_HIRAGANA  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LANG_KATAKANA  &none   &none   &none   &none   &trans
-&trans  &bootloader   &sys_reset      &none         &none         &none           &kp LANGUAGE_1     &trans  &trans  &trans  &trans  &trans
-                                      &trans        &trans        &trans          &trans             &trans  &trans
+&trans  &trans       &trans      &trans  &bt BT_CLR  &bt BT_CLR_ALL    &kp LANG_HIRAGANA  &bt BT_PRV    &bt BT_NXT    &trans        &trans  &trans
+&trans  &trans       &trans      &trans  &trans      &trans            &kp LANG_KATAKANA  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none   &trans
+&trans  &bootloader  &sys_reset  &none   &none       &none             &kp LANGUAGE_1     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+                                 &trans  &trans      &trans            &trans             &trans        &trans
             >;
         };
 
