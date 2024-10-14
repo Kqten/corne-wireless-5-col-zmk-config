@@ -1,4 +1,4 @@
-https://github.com/KatenGaas/corne-wireless-5-col-zmk-config/actions/
+https://github.com/kqten/corne-wireless-5-col-zmk-config/actions/
 to build
 after, download the firmware zip
 
