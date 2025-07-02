@@ -74,7 +74,7 @@
             bindings = <
 &trans  &trans       &trans      &trans  &bt BT_CLR  &bt BT_CLR    &kp LANG_HIRAGANA  &bt BT_PRV    &bt BT_NXT    &trans        &trans  &trans
 &trans  &trans       &trans      &trans  &trans      &trans        &kp LANG_KATAKANA  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none   &trans
-&trans  &bootloader  &sys_reset  &none   &none       &tog 5        &kp LANGUAGE_1     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+&trans  &bootloader  &sys_reset  &none   &none       &to 5         &kp LANGUAGE_1     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
                                  &trans  &trans      &trans        &trans             &trans        &trans
             >;
         };
@@ -90,10 +90,10 @@
 
         fkey_perm {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &tog 0  &trans  &trans  &trans  &tog 0  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &to 0   &trans  &trans  &trans  &to 0   &trans
 &trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &tog 0  &trans
-                        &trans  &trans   &trans     &tog 0  &trans  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &to 0   &trans
+                        &trans  &trans   &trans     &to 0   &trans  &trans
             >;
         };
     };
